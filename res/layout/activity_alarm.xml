@@ -8,15 +8,14 @@
         android:id="@+id/mainview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
-            android:id="@+id/charge"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="@drawable/mymoney" />
+            android:background="@drawable/alram" />
     </LinearLayout>
 
 </LinearLayout>

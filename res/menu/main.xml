@@ -2,12 +2,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.ticcle.MainActivity" >
-
+ 
+ <item
+        android:id="@+id/action_chalenge"
+        android:orderInCategory="100"
+        android:title="나의도전"
+        app:showAsAction="withText|always"/>
+  
+    <item
+        android:id="@+id/action_cate"
+        android:orderInCategory="200"
+        android:title="나의태산"
+        app:showAsAction="withText|always"/>
     
+     <item
+        android:id="@+id/action_diary"
+        android:orderInCategory="300"
+        android:title="티끌모아"
+        app:showAsAction="withText|always"/>
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        android:orderInCategory="400"
+        android:title="회원정보"
+        app:showAsAction="withText|always"/>
+       <item
+        android:id="@+id/action_alarm"
+        android:orderInCategory="500"
+        android:title="알림설정"
+        app:showAsAction="withText|always"/>
 
+        <item
+        android:id="@+id/action_eula"
+        android:orderInCategory="600"
+        android:title="정보규약"
+        app:showAsAction="withText|always"/>
 </menu>

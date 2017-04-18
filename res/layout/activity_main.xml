@@ -1,14 +1,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
- >
+    android:layout_height="match_parent" >
 
-    <ListView
-        android:id="@+id/mainlist"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-         />
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mainlist"
+                android:layout_width="match_parent"
+                android:layout_height="1200dp"
+                android:background="@drawable/list" />
+
+            <ImageView
+                android:id="@+id/backgraound"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="bottom"
+                 />
+        </FrameLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -16,5 +16,14 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name = "NoActionBar" parent = "@android:style/Theme.Holo.Light">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="TranslucentActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 
 </resources>

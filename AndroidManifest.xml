@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ticcle"
+    package="com.example.tikkle"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,11 +13,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/loading1"
+        android:label="tikkle"
         android:theme="@android:style/Theme.Material.Light" >
         <activity
-            android:name=".GuideActivity"
+            android:name="com.example.tikkle.GuideActivity"
+            android:noHistory="true"
             android:theme="@android:style/Theme.Material.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,25 +26,86 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.tikkle.ItemActivity1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tikkle.ItemActivity3" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tikkle.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.tikkle.DetailActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name="com.example.tikkle.Mypage"
+            android:theme="@style/TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tikkle.Challenge"
+            android:theme="@style/TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tikkle.Alarm"
+            android:theme="@style/TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tikkle.Taesan"
+            android:theme="@style/TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tikkle.Category"
+            android:theme="@style/TranslucentActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tikkle.Diary"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
          <activity
-            android:name=".Mypage"
+            android:name="com.example.tikkle.ChargeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 웹뷰 및 ISP 등의 어플 인증후 앱으로 다시 호출하기 위한 스키마 설정 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="iamporttest" />
             </intent-filter>
         </activity>
     </application>
